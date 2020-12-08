@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id ="mother">
+        <div class="container jumbotron">
+            <h1 class="text-success text-center">Welcome to weather app</h1>
+            <form>
+                <div class="form-group">
+                    <label for="city" class="font-weight-bold"> City</label>
+                    <input type="city" class="form-control" id="city" placeholder="Enter city">
+                </div>
+                <div class="form-group">
+                    <label for="country" class="font-weight-bold"> Country</label>
+                    <input type="country" class="form-control" id="country" placeholder="Enter country">
+                    <small class="form-text text-muted">Type your ISO-3166 format,you can try two letter of your
+                        country,if you are in luck</small>
+                </div>
+                <button id="submit" class="btn btn-primary" >Get Weather</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center" id="cityName">City</div>
+                    <ul class="list-group">
+                        <li class="list-group-item" id="w-behave-img"><img src="" id="w-img" class="d-block m-auto"><div id="w-behave" class="text-center">Weather</div></li>
+                        <li class="list-group-item">Tempareture (cel) : <span  id="w-tempa"></span> </li>
+                        <li class="list-group-item">Pressure (hpa): <span id="w-pressure"></span> </li>
+                        <li class="list-group-item">Humidity (%): <span id="w-humidity"></span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- bootstrap cdn script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- my script -->
+    <script src="Store.js"></script>
+    <script src="weather.js"></script>
+    <script src="UI.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
