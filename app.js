@@ -32,6 +32,7 @@ document.querySelector('#submit').addEventListener("click", function (e) {
           getWeatherdata();
     }
 })
+//getting data from api
 
 function getWeatherdata() {
     weather.getWeather().then((data) => {
